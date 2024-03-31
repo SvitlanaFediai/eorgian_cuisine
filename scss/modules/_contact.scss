@@ -1,0 +1,64 @@
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      flex-direction: column;
+      margin-bottom: 30px;
+      gap: 15px;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    gap: 10px;
+
+    &--wrap {
+      flex-direction: column;
+      align-items: start;
+
+      @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+        align-items: center;
+      }
+    }
+  }
+
+  &__phone-link {
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      display: none;
+    }
+  }
+
+  &--footer {
+    gap: 10px;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__messengers {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+    gap: 15px;
+  }
+}

@@ -1,0 +1,34 @@
+.navigation {
+  &__list {
+   
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      position: fixed;
+      top: 88px;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 150px;
+      height: 100%;
+      text-align: center;
+      transition: .3s;
+      z-index: 10;
+      right: -150px;
+      justify-content: space-evenly;
+      
+      &--active {
+        right: 0;
+      }
+    }
+
+    &-link {
+      transition: all .3s ease-in;
+
+      &:hover{
+        color: $color-red;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.item {
+  &__modal {
+    border-bottom: 1px solid $color-light-grey;
+
+    &:nth-last-child(-n+2) {
+      border-bottom: none;
+
+      @media screen and (min-width: $mobile) and (max-width: $tablet-start) {
+        border-bottom: 1px solid $color-light-grey;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__composition {
+    margin-bottom: 20px;
+    width: 86%;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet-start) {
+      width: 100%;
+    }
+  }
+}

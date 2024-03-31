@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Svitlana Fediai">
+  <meta name="description" content="SCSS, html, css, js, Frontend">
+  <title>Georgian cuisine</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.17/dist/fancybox/fancybox.css"/>
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="content">
+      <div class="header__wrapper">
+        <div class="header__fixed">
+          <div class="header__menu">
+            <div class="logo">
+              <a href="#">
+                <img src="./img/logo.png" alt="logo">
+              </a>
+            </div>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="#">главная</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="#">меню</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="#">контакты</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-link link" href="#">галерея</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contact">
+              <div class="contact__phone">
+                <svg class="contact__phone-icon social__icon icon">
+                  <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                </svg>
+                <a class="contact__phone-link phone link" href="tel:+380987654321">+380 (98) 765 43 21</a>
+              </div>
+              <div class="social__contact">
+                <a class="social__link link" href="https://www.instagram.com/">
+                  <svg class="icon social__icon">
+                    <use xlink:href="./img/svg/sprite.svg#insta"></use>
+                  </svg>
+                </a>
+                <a class="social__link link" href="https://uk-ua.facebook.com/">
+                  <svg class="icon social__icon">
+                    <use xlink:href="./img/svg/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+                <a class="social__link link" href="https://twitter.com/?lang=uk">
+                  <svg class="icon social__icon">
+                    <use xlink:href="./img/svg/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+              
+            <button type="button" class="btn btn__mobile">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__content">
+          <h1 class="title title__header">
+            Попробуй лучшую <span class="title title__header title__header--span">грузинскую</span> кухню.
+          </h1>
+          <p class="text">В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным рецептам грузинской кухни. Потрясающий вкус блюд перенесет Вас к атмосферу невероятного Тбилисси не выходя из дома. </p>
+          <button class="btn btn__header">перейти к меню</button>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="menu">
+      <div class="content">
+        <h2 class="title title__section">Меню</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+      </div>
+      <div class="swiper menu__slider-wrapper">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-wrapper menu__slider"></div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__fixed-box">
+        <img src="./img/Слой 3 1.png" alt="">
+      </div>
+      <div class="content">
+        <h2 class="title title__section">Галлерея</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+      </div>
+      <div class="swiper gallery__swiper" id="gallerySwiper">
+        <div class="swiper-wrapper gallery__swiper-wrapper">
+          <div class="swiper-slide gallery__item">
+            <a href="./img/chakhokhbili-traditional-georgian-dish (1) 1.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/chakhokhbili-traditional-georgian-dish (1) 1.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/chakhokhbili-traditional-georgian-dish (1) 2.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/chakhokhbili-traditional-georgian-dish (1) 2.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal3.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal3.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal4.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal4.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal5.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal5.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal6.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal6.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal7.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal7.jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide gallery__item">
+            <a href="./img/gal8.jpg" data-fancybox="gallery">
+              <img class="gallery__img" src="./img/gal8.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul class="swiper-pagination"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content">
+      <div class="contact__info">
+        <div class="logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="contact contact--footer">
+          <a class="phone link" href="tel:+380987654321">+380 (98) 765 43 21</a>
+          <div class="contact__messengers">
+            <a class="link" target="_blank" href="http://tg://resolve?domain=nickname">
+              <svg class="icon telegram">
+                <use xlink:href="./img/svg/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+            <a class="link" target="_blank" href="http://viber://chat?number=%2B80987654321">
+              <svg class="icon viber">
+                <use xlink:href="./img/svg/sprite.svg#viber"></use>
+              </svg>
+            </a>
+            <a class="link" target="_blank" href="http://whatsapp://send?phone=+80987654321">
+              <svg class="icon whatsapp">
+                <use xlink:href="./img/svg/sprite.svg#whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact__detail contact__detail--wrap">
+          <p class="contact__detail--address">г. Киев, станция метро</p>
+          <p class="contact__detail--address">"Крещатик"</p>
+        </div>
+        <div class="contact__detail">
+          <h5 class="contact__detail--mail">Email:</h5>
+          <a class="link" href="mailto:mail@mal.ua">mail@mal.ua</a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <div class="customer__terms">
+          <a class="link" href="#">Политика конфиденциальности</a>
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </div>
+        <div class="footer__rights">
+          <p>Динамо. Грузинское бистро. Все права защищены, <span class="year"></span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__overlay">
+      <button class="btn btn__close">
+        <svg class="icon close">
+          <use xlink:href="./img/svg/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal__gallery">
+        <div>
+          <img src="./img/Rectangle 25.jpg" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 26.jpg" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 27.jpg" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 28.jpg" alt="dish">
+        </div>
+      </div>
+      <div class="modal__content">
+        <h2 class="title title__modal"></h2>
+        <div class="modal__menu"></div>
+      </div>
+      <div class="modal__gallery">
+        <div>
+          <img src="./img/Rectangle 29.png" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 30.jpg" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 21.jpg" alt="dish">
+        </div>
+        <div>
+          <img src="./img/Rectangle 32.jpg" alt="dish">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

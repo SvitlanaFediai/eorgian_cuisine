@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $default-font-size;
+}
+
+body {
+  min-width: $mobile;
+
+  font-family: $primary-font;
+  font-size: $default-font-size;
+  color: $color-main;
+
+  min-height: 100vh;
+  background-color: $color-black;
+}
+
+.main {
+  background: linear-gradient( rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.8)100%), url(../img/bg__main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+
+  & p {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 50%;
+  }
+  
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+
+    & p {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}

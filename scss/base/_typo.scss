@@ -1,0 +1,101 @@
+.navigation {
+  
+  &__list {
+    
+    &-link {
+      color: $color-main;
+
+      font-weight: 500;
+    }
+  }
+}
+
+.phone {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 1.31rem;
+}
+
+.title {
+
+  font-weight: 900;
+  line-height: 70px;
+
+  &__header {
+    font-size: 3.44rem;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      font-size: 2rem;
+    }
+
+    &--span {
+      color: $color-red;
+    }
+  }
+
+  &__section {
+    font-size: 3rem;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__modal {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+.btn {
+  font-family: $primary-font;
+  font-weight: 900;
+  font-size: 0.87rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+}
+
+.menu__title {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.contact__detail {
+  font-size: 0.87rem;
+}
+
+.footer {
+  font-family: $secondary-font;
+  font-weight: 400;
+
+  &__info {
+    font-size: 0.75rem;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet-start) {
+      font-size: 0.62rem;
+    }
+  }
+}
+
+.item {
+  &__header {
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 0.69rem;
+  }
+
+  &__composition {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 20px;
+  }
+}

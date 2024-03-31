@@ -1,0 +1,30 @@
+// Helpers
+@import "./helpers/mixins";
+@import "./helpers/variables";
+
+// Base
+@import "./base/reset";
+@import "./base/general";
+@import "./base/fonts";
+@import "./base/typo";
+
+// Layout 
+@import "./layout/main";
+@import "./layout/header";
+@import "./layout/footer";
+
+// Modules
+@import "./modules/logo";
+@import "./modules/nav";
+@import "./modules/gallery";
+@import "./modules/swiper";
+@import "./modules/menu-section";
+@import "./modules/contact";
+@import "./modules/modal";
+@import "./modules/modal-item";
+
+//Elements
+@import "./elements/button";
+@import "./elements/links";
+
+

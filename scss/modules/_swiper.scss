@@ -1,0 +1,81 @@
+.swiper-button {
+  cursor: pointer;
+  transition: all .5s ease-out;
+
+  &-prev::after,
+  &-next::after {
+    content: "";
+  }
+
+  &-prev {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    z-index: 100;
+    transform: translate(-16%, -50%);
+    background-image: url('../img/left-arrow.png');
+    background-size: 40px 40px;
+    display: block;
+    width: 40px; 
+    height: 40px;
+  }
+
+  &-next {
+    position: absolute;
+    top: 50%;
+    right: 16%;
+    transform: translate(-16%, -50%);
+    z-index: 100;
+    background-image: url('../img/right-arrow.png');
+    background-size: 40px 40px;
+    display: block;
+    width: 40px; 
+    height: 40px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+    &-prev,
+    &-next {
+      visibility: hidden;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: -30px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+	width: auto !important;
+	right: auto !important;
+	margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: $color-light-grey;
+    border-radius: 50%;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover,
+    &-active {
+      background-color: $color-red;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+  .swiper-wrapper {
+
+    &.menu__slider {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+    }
+  }
+}

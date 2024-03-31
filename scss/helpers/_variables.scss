@@ -1,0 +1,27 @@
+//fonts
+$primary-font: 'Noto Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+//colors
+$color-main:              #ffffff;
+$color-black:             #000000;
+$color-red:               #B82121;
+$color-grey:              #E0E0E0;
+$color-dark-grey:         #393939;
+$color-light-grey:        #c4c4c4;
+$color-telegram:          #3FA3FF;
+$color-viber:             #8359A2;
+$color-whatsapp:          #11BC3C;
+
+//breakpoints
+$dekstop: 1440px;
+$tablet-end: $dekstop - 1;
+$tablet-start: 840px;
+$mobile-end: $tablet-start - 1;
+$mobile: 375px;
+
+//font-size
+$default-font-size: 16px;
+
+//width
+$max-width: 1245px;

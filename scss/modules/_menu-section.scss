@@ -1,0 +1,82 @@
+.menu {
+  margin-bottom: 140px;
+  padding-top: 50px;
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__slider-item {
+    width: 288px;
+    min-height: 300px;
+    height: 508px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    overflow: hidden;
+
+    &:hover {
+      & .menu__overlay {
+        opacity: 1;
+      }
+
+      & img {
+        opacity: 1;
+      }
+
+      & .btn__menu {
+        top: 50%;
+      }
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: .6;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      height: 300px;
+      width: 355px !important;
+      margin: 0 auto !important;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*z-index: 10;*/
+    text-align: center;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+      top: 30%;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $max-width) {
+    margin-bottom: 75px;
+    padding-top: 25px;
+  }
+}
+
+.btn__menu {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.7s ease-out;
+}
